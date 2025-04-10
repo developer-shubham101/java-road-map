@@ -1,0 +1,16 @@
+
+
+
+Actuator in spring boot
+
+
+spring boot starter validation maven
+
+Saga Pattern in Microservices
+
+Spring Cloud Circuit Breaker
+
+https://cloud.google.com/apigee/docs/api-platform/security/oauth/oauth-home
+
+
+apigee oauth
