@@ -8,13 +8,13 @@ Here's an overview of each of the SOLID principles:
 - **Example**:
   ```java
   // Violates SRP: This class handles both user data and notification logic
-  public class User {
+  public class serializableClass.User {
       public void saveUser() { /* save user logic */ }
       public void sendNotification() { /* notification logic */ }
   }
 
   // Follows SRP: Separates user logic from notification logic
-  public class User {
+  public class serializableClass.User {
       public void saveUser() { /* save user logic */ }
   }
   public class NotificationService {

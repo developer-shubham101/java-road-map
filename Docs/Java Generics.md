@@ -140,16 +140,16 @@ When interacting with databases in a project, you can use generics to create a *
       T findById(int id);
   }
 
-  public class UserDao implements GenericDao<User> {
+  public class UserDao implements GenericDao<serializableClass.User> {
       @Override
-      public void save(User user) {
+      public void save(serializableClass.User user) {
           // Code to save user
       }
 
       @Override
-      public User findById(int id) {
+      public serializableClass.User findById(int id) {
           // Code to find user by id
-          return new User();
+          return new serializableClass.User();
       }
   }
 
@@ -167,7 +167,7 @@ When interacting with databases in a project, you can use generics to create a *
   }
   ```
 
-In this example, the `GenericDao<T>` interface can work with any type of entity (like `User`, `Product`), and each concrete class implements methods for that specific entity type. This eliminates the need to write multiple DAOs that are otherwise redundant.
+In this example, the `GenericDao<T>` interface can work with any type of entity (like `serializableClass.User`, `Product`), and each concrete class implements methods for that specific entity type. This eliminates the need to write multiple DAOs that are otherwise redundant.
 
 #### 3. **Custom Utility Classes**
 Generics can be used to write utility classes that operate on different data types. For example, creating a **generic utility class** for sorting:
@@ -201,13 +201,13 @@ When designing **RESTful APIs** or microservices, you may use generics to return
   }
 
   // Example usage
-  public ApiResponse<User> getUserById(int id) {
-      User user = userService.findById(id);
-      return new ApiResponse<>(user, "User found", 200);
+  public ApiResponse<serializableClass.User> getUserById(int id) {
+      serializableClass.User user = userService.findById(id);
+      return new ApiResponse<>(user, "serializableClass.User found", 200);
   }
   ```
 
-This `ApiResponse<T>` wrapper can handle any type of response (e.g., `User`, `Product`, `Order`), allowing for a unified structure while preserving type safety.
+This `ApiResponse<T>` wrapper can handle any type of response (e.g., `serializableClass.User`, `Product`, `Order`), allowing for a unified structure while preserving type safety.
 
 ### **Conclusion**
 

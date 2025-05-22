@@ -27,20 +27,20 @@ Add the following dependencies to your `pom.xml` if you're using **Maven**. Thes
 </dependencies>
 ```
 
-### 2. **Create a User Model**
+### 2. **Create a serializableClass.User Model**
 
 You need to create a simple user model to hold username and password.
 
 ```java
 package com.example.demo.model;
 
-public class User {
+public class serializableClass.User {
     private String username;
     private String password;
 
-    public User() {}
+    public serializableClass.User() {}
 
-    public User(String username, String password) {
+    public serializableClass.User(String username, String password) {
         this.username = username;
         this.password = password;
     }
@@ -229,7 +229,7 @@ This controller handles user authentication and returns the JWT token if the cre
 ```java
 package com.example.demo.controller;
 
-import com.example.demo.model.User;
+import com.example.demo.model.serializableClass.User;
 import com.example.demo.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -248,7 +248,7 @@ public class AuthenticationController {
     private AuthenticationManager authenticationManager;
 
     @PostMapping("/authenticate")
-    public String authenticate(@RequestBody User user) throws Exception {
+    public String authenticate(@RequestBody serializableClass.User user) throws Exception {
         try {
             authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())

@@ -53,7 +53,7 @@ In this example:
 - Modifying the value in one thread doesn’t affect the value in another thread.
 
 #### **Use Cases:**
-- **User sessions**: Storing user-specific data such as authentication tokens, user preferences, etc.
+- **serializableClass.User sessions**: Storing user-specific data such as authentication tokens, user preferences, etc.
 - **Database connections**: Managing a database connection per thread without sharing the connection across multiple threads.
 - **Transaction management**: Keeping track of transaction states that are thread-local.
 

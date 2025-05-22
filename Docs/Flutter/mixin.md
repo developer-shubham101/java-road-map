@@ -125,7 +125,7 @@ mixin Logger {
 
 class AuthService with Logger {
   void login(String username, String password) {
-    log("User $username is logging in.");
+    log("serializableClass.User $username is logging in.");
     // Perform login logic
   }
 }

@@ -7,7 +7,7 @@ Dart provides two primary types of streams:
    - **Use Cases**:
      - Handling a network request where the response is sent once (like HTTP requests).
      - Processing a file or data that is streamed and consumed once.
-     - User inputs or gestures that are only processed by one handler.
+     - serializableClass.User inputs or gestures that are only processed by one handler.
    - **Example**:
      ```dart
      import 'dart:async';

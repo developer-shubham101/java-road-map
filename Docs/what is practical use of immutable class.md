@@ -32,7 +32,7 @@ Immutable classes have several practical uses in real-world applications, especi
 - Immutable classes add a layer of **security** and **defense** against accidental or unauthorized modification, which is particularly useful in sensitive applications (e.g., banking, healthcare).
 - For example, an immutable `Person` object can be shared without risk that an unauthorized class might change the person’s name, birth date, or other details after creation.
 
-### Example Use Case: User Profile in a Web Application
+### Example Use Case: serializableClass.User Profile in a Web Application
 
 Imagine a **web application** where user profiles are accessed frequently but not updated often. Storing user profiles as immutable objects can make the application more efficient and robust.
 

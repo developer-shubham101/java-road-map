@@ -78,7 +78,7 @@ Handling multithreading at the **database level** when using **Kubernetes** with
 ### Example Implementation with Spring Data (Optimistic Locking):
 ```java
 @Entity
-public class User {
+public class serializableClass.User {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -99,8 +99,8 @@ public class User {
 In your repository:
 ```java
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-    List<User> findByTimerStatus(String status);
+public interface UserRepository extends JpaRepository<serializableClass.User, Long> {
+    List<serializableClass.User> findByTimerStatus(String status);
 }
 ```
 
